@@ -1,0 +1,32 @@
+<h2>Registered Events</h2>
+        <table id="eventTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone</th>
+                    <th>Event Type</th>
+                    <th>Event Name</th>
+                    <th>Event Date</th>
+                    <th>Event Time</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <?php foreach ($events as $event): ?>
+                    <tr>
+                        <td><?= htmlspecialchars($event['name']) ?></td>
+                        <td><?= htmlspecialchars($event['emailID']) ?></td>
+                        <td><?= htmlspecialchars($event['phone']) ?></td>
+                        <td><?= htmlspecialchars($event['eventType']) ?></td>
+                        <td><?= htmlspecialchars($event['eventName']) ?></td>
+                        <td><?= htmlspecialchars($event['eventDate']) ?></td>
+                        <td><?= htmlspecialchars($event['eventTime']) ?></td>
+                        <td>
+                            <button class="edit" data-id="<?= $event['id'] ?>">Edit</button>
+                            <a href="?delete=<?= $event['id'] ?>" class="delete">Delete</a>
+                        </td>
+                    </tr>
+                <?php endforeach; ?>
+            </tbody>
+        </table>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Input with Icons</title>
+    <style>
+        .search-container {
+            display: flex; /* Use flexbox for alignment */
+            align-items: center; /* Center items vertically */
+            width: 100%; /* Full width */
+        }
+
+        .search-container input[type="text"] {
+            width: 100%; /* Input takes available space */
+            box-sizing: border-box; /* Include padding and border in the width */
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            padding: 12px 40px 12px 40px; /* Padding for left/right space */
+            background-image: url('searchicon.png'); /* Search icon on the left */
+            background-position: 10px center; /* Position icon on the left */
+            background-repeat: no-repeat;
+            background-color: white;
+        }
+
+        .search-container button {
+            padding: 12px 20px; /* Padding for the button */
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            margin-left: 8px; /* Space between input and button */
+            background-color: #007bff; /* Button color */
+            color: white; /* Text color */
+            font-size: 16px;
+            cursor: pointer; /* Change cursor to pointer */
+        }
+
+        .search-container button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+    </style>
+</head>
+<body>
+
+<h2>Search Input with Icons</h2>
+
+<form class="search-container">
+    <input type="text" name="search" placeholder="Search...">
+    <button type="submit">Go</button>
+</form>
+
+</body>
+</html>

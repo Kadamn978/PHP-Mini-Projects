@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(250, 228, 199);
+    color: rgb(58, 25, 88);
+    height: 100vh;
+    width: 100vw;
+}
+.container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid black;
+    text-align: center;
+}
+.header{
+    background-color: aquamarine;
+    font-size: 25px;
+    font-weight: 200;
+    color :coral;
+    text-align: center;
+}
+.game{
+    display: flex;
+    position: relative;
+    margin: auto;
+    margin-top: 40px;
+    padding: 20px;
+    width: 60vmin;
+    height: 60vmin;
+    border: 2px solid sandybrown;
+}
+.button{ 
+    margin: 10px 10px;
+    position: relative;
+    width: 18vmin;
+    height:18vmin;
+    background-color: azure;
+    border: 1px solid black;
+    border-radius: 20px;
+}   

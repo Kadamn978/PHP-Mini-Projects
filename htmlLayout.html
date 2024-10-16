@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta http-equiv="refresh" content="5">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Date and Time</title>
+    <script>
+        function displayDateTime() {
+            const now = new Date();
+            document.getElementById('date-time').innerText = now.toString();
+        }
+        window.onload = displayDateTime; // Call the function when the page loads
+    </script>
+</head>
+<body>
+    <h1>Current Local Date and Time</h1>
+    <p id="date-time"></p>
+</body>
+</html>

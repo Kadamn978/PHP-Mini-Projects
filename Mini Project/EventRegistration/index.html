@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management System</title>
+    <link rel="stylesheet" href="/EventRegistration/Css/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js"></script>
+    <script src="/EventRegistration/Jquery/eventRegistrationFormValidation.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <p>Event Registration</p>
+        </div>
+
+        <form id="eventRegistrationForm" action="/EventRegistration/PHP/eventRegistrationForm.php" method="post">
+
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter Your Name">
+
+            <label for="email">Email ID</label>
+            <input type="email" id="email" name="email" placeholder="Enter Your Email ID">
+
+            <label for="phone">Phone No.</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter Your Phone No.">
+
+            <label for="eventtype">Event Type</label>
+            <select name="eventtype" id="eventtype">
+                <option value="">Select Event</option>
+                <option value="privateevent">Private</option>
+                <option value="corporateevent">Corporate</option>
+                <option value="communityevent">Community</option>
+                <option value="otherevent">Other</option>
+            </select>
+
+            <label for="event">Event Name</label>
+            <input type="text" id="event" name="event" placeholder="Event Name">
+
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date">
+
+            <label for="eventtime">Event Time</label>
+            <select name="eventtime" id="eventtime">
+                <option value="">Select Time</option>
+                <option value="morning">Morning (6am-10am)</option>
+                <option value="afternoon">Afternoon (11am-3pm)</option>
+                <option value="evening">Evening (4pm-7pm)</option>
+                <option value="night">Night (8pm-12am)</option>
+            </select>
+
+            <label for="request">Comments</label>
+            <textarea name="request" id="request" placeholder="Max 256 words"></textarea>
+
+            <button class="button" type="submit">Submit</button>
+            <button class="button" type="reset">Reset</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
